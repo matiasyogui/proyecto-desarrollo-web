@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+header {
+  background-color: pink;
+  transition: transform 500ms;
+}
+
+header:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.lista-nav {
+  padding: 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.lista-nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.lista-nav__link {
+  padding: 5px;
+  color: red;
+  text-decoration: none;
+}
+
+.lista-nav__link:hover {
+  opacity: 0.5;
+}
+
+#logo {
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(
+    rgba(255, 192, 203, 0.7),
+    rgb(173, 216, 230, 0.7)
+  );
+}
+
+footer {
+  background-color: lightblue;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  filter: brightness(95%);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INDEX */
+.titulo-principal {
+  width: 100%;
+  color: #ad7a99;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Chicle", cursive;
+  padding-bottom: 1rem;
+}
+
+#texto {
+  display: inline;
+  text-align: left;
+}
+
+#subtitulo {
+  font-size: 30px;
+}
+
+#parrafo {
+  font-size: 20px;
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#img {
+  margin: 20px;
+  display: inline;
+}
+
+/* ADOPTAR */
+.card {
+  display: inline-block;
+  background-color: rgb(223, 223, 223);
+  border: 1px solid black;
+  width: 25%;
+  margin: auto;
+  transition: scale 500ms;
+}
+
+.card__titulo {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card:hover,
+.card:focus {
+  scale: 1.05;
+}
+
+table {
+  margin: 30px auto;
+}
+
+.celda {
+  padding: 10px;
+}
+
+.principal {
+  background-color: lightcyan;
+}
+
+/*ADOPTAR MASCOTA EN PARTICULAR */
+#foto-mascota {
+  box-shadow: 15px 15px 40px black;
+}
+
+#info_mascota {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#texto-mascota {
+  margin-left: 2.5rem;
+  width: 100%;
+}
+
+#informacion-mascota {
+  font-size: 1.5rem;
+}
+
+/*Contacto */
+form {
+  text-align: center;
+}
+
+fieldset {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+fieldset label {
+  margin: 5px;
+}
+
+.input {
+  margin: 20px;
+}
+
+#enviar {
+  padding: 0.5rem;
+  border: 1px black solid;
+  border-radius: 1rem;
+  transition: all 350ms;
+}
+
+#enviar:hover {
+  background: rgb(218, 218, 218);
+  transform: scale(1.05);
+}
+
+.input-texto {
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+.input-seleccion {
+  width: 20%;
+  border-radius: 1rem;
+  padding: 0.4em;
+}
+
+.input-textarea {
+  width: 60%;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+/*NOSOTROS*/
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+/* ICONOS */
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
