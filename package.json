@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-desarrollo-web",
+  "version": "1.0.0",
+  "description": "Proyecto del curso de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasyogui/proyecto-desarrollo-web.git"
+  },
+  "author": "Matias Yogui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasyogui/proyecto-desarrollo-web/issues"
+  },
+  "homepage": "https://github.com/matiasyogui/proyecto-desarrollo-web#readme"
+}

@@ -1,0 +1,27 @@
+@import "global";
+@import "index";
+@import "adoptar";
+@import "adoptarMascotaParticular";
+@import "contacto";
+@import "nosotros";
+
+/* ICONOS */
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
