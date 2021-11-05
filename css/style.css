@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*variables*/
 /* GENERAL */
 header {
   background-color: pink;
@@ -20,10 +21,12 @@ header:hover {
   width: 80%;
 }
 
-.navbar {
+.navegacion {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.barra {
+  background-color: pink;
 }
 
 .lista-nav {
@@ -46,10 +49,6 @@ header:hover {
   text-decoration: none;
 }
 
-#logo {
-  margin: 10px;
-}
-
 main {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -69,6 +68,11 @@ footer {
   justify-content: space-between;
 }
 
+@media (max-width: 990px) {
+  .logo {
+    align-self: flex-start;
+  }
+}
 /* INDEX */
 .titulo-principal {
   width: 100%;
@@ -106,6 +110,7 @@ footer {
   border: 1px solid black;
   width: 25%;
   margin: auto;
+  margin-bottom: 1rem;
   transition: scale 500ms;
 }
 
@@ -132,14 +137,14 @@ table {
 }
 
 /*ADOPTAR MASCOTA EN PARTICULAR */
-#foto-mascota {
-  box-shadow: 15px 15px 40px black;
-}
-
-#info_mascota {
-  margin: 1rem;
+.info_mascota {
+  margin: 2rem;
   display: flex;
   align-items: center;
+}
+
+#foto-mascota {
+  box-shadow: 15px 15px 40px grey;
 }
 
 #texto-mascota {
@@ -151,6 +156,15 @@ table {
   font-size: 1.5rem;
 }
 
+@media (max-width: 700px) {
+  .info_mascota {
+    display: block;
+  }
+
+  #texto-mascota {
+    margin-left: 0;
+  }
+}
 /*Contacto */
 form {
   text-align: center;
@@ -196,8 +210,63 @@ fieldset label {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   row-gap: 2rem;
+  column-gap: 2rem;
+  grid-template-areas: "foto1 texto1" "texto2 foto2" "foto3 texto3";
 }
 
+.texto1 {
+  grid-area: texto1;
+}
+
+.texto2 {
+  grid-area: texto2;
+}
+
+.texto3 {
+  grid-area: texto3;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.foto3 {
+  grid-area: foto3;
+}
+
+@media (max-width: 1050px) {
+  .grid-nosotros {
+    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
+  }
+
+  .texto1 {
+    justify-self: center;
+  }
+
+  .texto2 {
+    justify-self: center;
+  }
+
+  .texto3 {
+    justify-self: center;
+  }
+
+  .foto1 {
+    justify-self: center;
+  }
+
+  .foto2 {
+    justify-self: center;
+  }
+
+  .foto3 {
+    justify-self: center;
+  }
+}
 /* ICONOS */
 /* -----
 SVG Icons - svgicons.sparkk.fr

@@ -1,12 +1,13 @@
 /*ADOPTAR MASCOTA EN PARTICULAR */
-#foto-mascota {
-  box-shadow: 15px 15px 40px black;
-}
 
-#info_mascota {
-  margin: 1rem;
+.info_mascota {
+  margin: 2rem;
   display: flex;
   align-items: center;
+}
+
+#foto-mascota {
+  box-shadow: 15px 15px 40px grey;
 }
 
 #texto-mascota {
@@ -16,4 +17,14 @@
 
 #informacion-mascota {
   font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .info_mascota {
+    display: block;
+  }
+
+  #texto-mascota {
+    margin-left: 0;
+  }
 }

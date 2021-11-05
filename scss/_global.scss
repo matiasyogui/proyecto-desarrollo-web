@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+/*variables*/
+$color-h1: #ad7a99;
+$modo: light;
+
 /* GENERAL */
 header {
-  background-color: pink;
+  @if $modo == dark {
+    background-color: rgb(145, 110, 116);
+    color: white;
+  } @else {
+    background-color: pink;
+  }
   transition: transform 500ms;
   font-family: "Courier New", Courier, monospace;
 }
@@ -20,10 +29,12 @@ header:hover {
   width: 80%;
 }
 
-.navbar {
+.navegacion {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.barra {
+  background-color: pink;
 }
 
 .lista-nav {
@@ -49,22 +60,28 @@ header:hover {
   }
 }
 
-#logo {
-  margin: 10px;
-}
-
 main {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
-  background: linear-gradient(
-    rgba(255, 192, 203, 0.7),
-    rgb(173, 216, 230, 0.7)
-  );
+
+  @if $modo == dark {
+    background: linear-gradient(rgba(126, 91, 97, 0.7), rgba(66, 84, 90, 0.7));
+  } @else {
+    background: linear-gradient(
+      rgba(255, 192, 203, 0.7),
+      rgb(173, 216, 230, 0.7)
+    );
+  }
 }
 
 footer {
-  background-color: lightblue;
+  @if $modo == dark {
+    background-color: rgb(106, 134, 143);
+  } @else {
+    background-color: lightblue;
+  }
+
   margin-bottom: 0;
   padding: 0.5rem;
   filter: brightness(95%);
@@ -73,4 +90,10 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  .logo {
+    align-self: flex-start;
+  }
 }
