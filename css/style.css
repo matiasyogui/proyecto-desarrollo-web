@@ -6,14 +6,10 @@
 
 /*variables*/
 /* GENERAL */
+/* HEADER */
 header {
   background-color: pink;
-  transition: transform 500ms;
   font-family: "Courier New", Courier, monospace;
-}
-
-header:hover {
-  transform: scale(1.05, 1.05);
 }
 
 .container {
@@ -23,10 +19,17 @@ header:hover {
 
 .navegacion {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .barra {
   background-color: pink;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  padding: 0;
 }
 
 .lista-nav {
@@ -49,13 +52,24 @@ header:hover {
   text-decoration: none;
 }
 
+/* MAIN */
 main {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background: linear-gradient(rgba(255, 192, 203, 0.7), rgba(173, 216, 230, 0.7));
 }
 
+.titulo-principal {
+  width: 100%;
+  color: #ad7a99;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Chicle", cursive;
+  padding: 3rem 0;
+}
+
+/* FOOTER */
 footer {
   background-color: lightblue;
   margin-bottom: 0;
@@ -75,15 +89,6 @@ footer {
   }
 }
 /* INDEX */
-.titulo-principal {
-  width: 100%;
-  color: #ad7a99;
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Chicle", cursive;
-  padding-bottom: 1rem;
-}
-
 #texto {
   display: inline;
   text-align: left;
@@ -110,7 +115,6 @@ footer {
   background-color: #dfdfdf;
   border: 1px solid black;
   width: 25%;
-  margin: auto;
   margin-bottom: 1rem;
   transition: scale 500ms;
 }
@@ -123,18 +127,6 @@ footer {
 .card:hover,
 .card:focus {
   scale: 1.05;
-}
-
-table {
-  margin: 30px auto;
-}
-
-.celda {
-  padding: 10px;
-}
-
-.principal {
-  background-color: lightcyan;
 }
 
 /*ADOPTAR MASCOTA EN PARTICULAR */
@@ -193,6 +185,7 @@ fieldset label {
 }
 .input__textarea {
   width: 60%;
+  min-width: 30%;
   padding: 0.4rem;
   border-radius: 1rem;
 }
@@ -207,8 +200,6 @@ fieldset label {
 /*NOSOTROS*/
 .grid-nosotros {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   row-gap: 2rem;
   column-gap: 2rem;

@@ -4,7 +4,6 @@
   background-color: rgb(223, 223, 223);
   border: 1px solid black;
   width: 25%;
-  margin: auto;
   margin-bottom: 1rem;
   transition: scale 500ms;
 }
@@ -17,16 +16,4 @@
 .card:hover,
 .card:focus {
   scale: 1.05;
-}
-
-table {
-  margin: 30px auto;
-}
-
-.celda {
-  padding: 10px;
-}
-
-.principal {
-  background-color: lightcyan;
 }
