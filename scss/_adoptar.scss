@@ -4,8 +4,9 @@
   background-color: rgb(223, 223, 223);
   border: 1px solid black;
   width: 25%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   transition: scale 500ms;
+  padding: 0;
 }
 
 .card__titulo {
@@ -16,4 +17,5 @@
 .card:hover,
 .card:focus {
   scale: 1.05;
+  z-index: 1;
 }

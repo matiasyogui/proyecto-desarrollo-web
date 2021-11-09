@@ -4,12 +4,12 @@
   text-align: left;
 }
 
-#subtitulo {
-  font-size: 30px;
+.subtitulo {
+  font-size: 2.5rem;
 }
 
 #parrafo {
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 2rem;
   font-family: $fuente-cuerpo;
 }
@@ -17,4 +17,21 @@
 #img {
   margin: 20px;
   display: inline;
+}
+
+.valores {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: $fuente-cuerpo;
+}
+
+.titulo-valores {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.lista-de-valores {
+  font-size: 1.5rem;
+  list-style-type: none;
 }

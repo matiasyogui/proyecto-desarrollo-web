@@ -70,7 +70,7 @@ header {
 main {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 
   @if $modo == dark {
     background: linear-gradient(rgba(126, 91, 97, 0.7), rgba(66, 84, 90, 0.7));
