@@ -1,7 +1,10 @@
 /*ADOPTAR MASCOTA EN PARTICULAR */
 
+.container {
+  padding: 0;
+}
+
 .info_mascota {
-  margin: 2rem;
   display: flex;
   align-items: center;
 }
@@ -48,4 +51,14 @@
 
 .cuerpo-adoptar {
   font-family: $fuente-cuerpo;
+}
+
+@media (max-width: 400px) {
+  .titulo-lugar-de-encuentro {
+    font-size: 2rem;
+  }
+
+  #informacion-mascota {
+    font-size: 1.2rem;
+  }
 }

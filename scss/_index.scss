@@ -33,5 +33,15 @@
 
 .lista-de-valores {
   font-size: 1.5rem;
-  list-style-type: none;
+  list-style-type: circle;
+}
+
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  #parrafo {
+    font-size: 1.2rem;
+  }
 }
